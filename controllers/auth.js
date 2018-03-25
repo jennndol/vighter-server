@@ -16,7 +16,7 @@ const login = (req, res) => {
           message: 'success',
           token: token
         });
-      } else {
+      } else {  
         User.create({
             name: req.body.name,
             email: req.body.email
